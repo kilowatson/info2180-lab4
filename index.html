@@ -10,11 +10,29 @@
     <script src="app.js"></script>
 </head>
 
+
 <body>
+    <header>
+        <h1>Avengers Character Search</h1>
+    </header>
 
-    <h1>Avengers Character Search</h1>
 
-    <button type="button" onclick="loadDoc()">Search</button>
+    <main>
+        <form name="myForm">
+            <div>
+                <label for="fname">Search by full name or Alias</label><br>
+                <input type="text" id="nameoralias" name="fname" value=""><br>
+            </div>
+            <input type="button" value="Search" id="search" onclick="loadDoc()">
+        </form>
+
+        <h2>RESULT</h2>
+        <div id=result>
+
+        </div>
+    </main>
+
+
 </body>
 
 </html>
